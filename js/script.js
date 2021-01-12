@@ -62,12 +62,11 @@ function getRandomQuote(array) {
 
 
 function printQuote() {
-  let htmlString = ``;
   let quoteOnPage = getRandomQuote(quotes);
 
-  htmlString +=
-    `<p class="quote">${quoteOnPage.quote}</p>
-    <p class="source">${quoteOnPage.source}`
+  let htmlString =
+  `<p class="quote">${quoteOnPage.quote}</p>
+  <p class="source">${quoteOnPage.source}`;
 
   //Check if citation is blank - if not, populate in htmlString
   if (`${quoteOnPage.citation}` !== '') {
