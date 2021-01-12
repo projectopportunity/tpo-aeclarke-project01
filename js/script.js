@@ -68,15 +68,14 @@ function printQuote() {
   `<p class="quote">${quoteOnPage.quote}</p><p class="source">${quoteOnPage.source}`
 
   //Check if citation is blank - if not, populate in htmlString
-  if (`${quoteOnPage.citation}` !== '') {
-    htmlString += `<span class="citation">${quoteOnPage.citation}</span>
-`
-    } else htmlString += ``;
+  if (quoteOnPage.citation) {
+    htmlString += `<span class="citation">${quoteOnPage.citation}</span>`
+    } 
 
   //Check if year is blank - if not, populate in htmlString
-  if (`${quoteOnPage.year}` !== '') {
+  if (quoteOnPage.year) {
     htmlString += `<span class="year">${quoteOnPage.year}</span>`
-    } else htmlString += ``;
+    } 
   
   htmlString += `</p>`
   //Push quote to page:
