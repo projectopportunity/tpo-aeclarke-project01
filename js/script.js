@@ -71,15 +71,15 @@ function printQuote() {
 
   //Check if citation is blank - if not, populate in htmlString
   if (`${quoteOnPage.citation}` !== '') {
-    htmlString += `<span class="citation">`+`${quoteOnPage.citation}`+`</span>`
+    htmlString + `<span class="citation">${quoteOnPage.citation}</span>`
     };
 
   //Check if year is blank - if not, populate in htmlString
   if (`${quoteOnPage.year}` !== '') {
-    htmlString += `<span class="year">`+`${quoteOnPage.year}`+`</span>`
+    htmlString + `<span class="year">${quoteOnPage.year}</span>`
     };
   
-  htmlString += `</p>`
+  htmlString + `</p>`
   //Push quote to page:
   return document.getElementById('quote-box').innerHTML = `${htmlString}`
 }
