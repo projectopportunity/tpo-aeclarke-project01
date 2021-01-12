@@ -59,9 +59,10 @@ function getRandomQuote(array) {
  *2. Creates the HTML string, using the properties from the quote
  *3. Displays quote on the browser page
 ***/
+let htmlString = '';
+let quoteOnPage = getRandomQuote(quotes);
+
 function printQuote() {
-  let htmlString = '';
-  let quoteOnPage = getRandomQuote(quotes);
   htmlString +=
     `
     <p class="quote">${quoteOnPage.quote}</p>
