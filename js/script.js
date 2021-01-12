@@ -43,8 +43,10 @@ const quotes = [
 /***
  * `getRandomQuote` function
 ***/
-
-
+function getRandomQuote(arr) {
+  return Math.floor(Math.random() * quotes.length);
+}
+console.log(getRandomQuote();)
 
 /***
  * `printQuote` function
