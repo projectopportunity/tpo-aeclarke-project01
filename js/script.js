@@ -81,11 +81,11 @@ function printQuote() {
     };
   
   htmlString += `</p>`
-  return htmlString;
+  //Push quote to page:
+  return document.getElementById('quote-box').innerHTML = `${htmlString}`
 }
 
-//Push quote to page:
-document.getElementById('quote-box').innerHTML = `${htmlString}`
+
 
 
 /***
