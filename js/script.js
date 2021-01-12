@@ -8,8 +8,9 @@ project 1 - A Random Quote Generator
   // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
 /*** 
- * `quotes` array 
+ * `quotes` array - An array containing quotes with properties source, citation, and year.  This will be cycled through on the page with the below functions.
 ***/
+
 const quotes = [
   { quote: 'First quote',
     source: 'First source',
@@ -41,8 +42,9 @@ const quotes = [
 
 
 /***
- * `getRandomQuote` function
+ * `getRandomQuote` function - Expected input of quotes array. Calculates a random number between 0 and the length of the quotes array.  Returns a random quote.
 ***/
+
 function getRandomQuote(arr) {
   let randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
