@@ -44,9 +44,10 @@ const quotes = [
  * `getRandomQuote` function
 ***/
 function getRandomQuote(arr) {
-  return Math.floor(Math.random() * quotes.length);
+  let randomNumber = Math.floor(Math.random() * quotes.length);
+  return randomNumber;
 }
-console.log(getRandomQuote();)
+
 
 /***
  * `printQuote` function
