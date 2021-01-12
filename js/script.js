@@ -27,7 +27,8 @@ const quotes = [
   { quote: 'A girl knows her limits, but a wise girl knows she has none.',
     source: 'Norma Jeane Mortenson',
     citation: '',
-    year: '1926-1962'
+    year: '1926-1962',
+    tags: '#womenempoweringwomen'
   },
   { quote: "I see now that the circumstances of one's birth are irrelevant.  It is what you do with the gift of life that determines who you are.",
     source: 'Mewtwo',
@@ -86,7 +87,7 @@ function printQuote() {
     htmlString += `<span class="year">${quoteOnPage.year}</span>`
     } 
   
-  htmlString += `</p>`
+  htmlString += `<p class="tags">${quoteOnPage.tags}</p></p>`
   //Push quote to page:
   return document.getElementById('quote-box').innerHTML = `${htmlString}`
 }
