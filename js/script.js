@@ -72,30 +72,37 @@ function getRandomQuote(array) {
 
 
 function printQuote() {
+  // Call getRandomQuote function
   let quoteOnPage = getRandomQuote(quotes);
 
+  // Declare start of HTML string to be built
   let htmlString =
   `<p class="quote">${quoteOnPage.quote}</p><p class="source">${quoteOnPage.source}`
 
-  //Check if citation is blank - if not, populate in htmlString
+  // Check if citation is blank - if not, populate in htmlString
   if (quoteOnPage.citation) {
     htmlString += `<span class="citation">${quoteOnPage.citation}</span>`
     } 
 
-  //Check if year is blank - if not, populate in htmlString
+  // Check if year is blank - if not, populate in htmlString
   if (quoteOnPage.year) {
     htmlString += `<span class="year">${quoteOnPage.year}</span>`
     } 
   
   htmlString += `<p class="tags">${quoteOnPage.tags}</p></p>`
-  //Push quote to page:
+  
+  // Push quote to page:
   return document.getElementById('quote-box').innerHTML = `${htmlString}`
 }
 
+// Random Background Color Generator:
+  let randomColorArray = [];
 
-
-
-/***
+  for (let i = 0; i <3; i++) {
+    randomColorArray.push(Math.floor(Math.random()) * 255)
+  } 
+   
+ /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
