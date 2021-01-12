@@ -85,7 +85,7 @@ function printQuote() {
 }
 
 //Push quote to page:
-document.getElementById('quote-box').innerHTML == htmlString; 
+document.getElementById('quote-box').innerHTML = `${htmlString}`
 
 
 /***
