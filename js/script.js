@@ -73,7 +73,7 @@ function printQuote() {
   //Check if citation is blank - if not, populate in htmlString
   if (`${quoteOnPage.citation}` !== '') {
     htmlString += 
-    `<span class="citation"> ${quoteOnPage.citation} </span>`
+    `<span class="citation"> ${quoteOnPage.citation} </span> <br>`
     };
 
   //Check if year is blank - if not, populate in htmlString
