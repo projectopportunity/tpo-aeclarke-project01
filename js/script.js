@@ -42,19 +42,34 @@ const quotes = [
 
 
 /***
- * `getRandomQuote` function - Expected input of quotes array. Calculates a random number between 0 and the length of the quotes array.  Returns a random quote.
+ * `getRandomQuote` function: Expected input of quotes array
+ * 1. Calculates a random number between 0 and the length of the quotes array 
+ * 2. Returns a random quote
 ***/
 
-function getRandomQuote(arr) {
+function getRandomQuote(array) {
   let randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
 }
 
 
 /***
- * `printQuote` function
+ * `printQuote` function:
+ *1. Calls the getRandomQuote function to generate a quote to show on the page
+ *2. Creates the HTML string, using the properties from the quote
+ *3. Displays quote on the browser page
 ***/
-
+function printQuote() {
+  let htmlString = '';
+  let quoteOnPage = getRandomQuote(quotes);
+  htmlString +=
+    `
+    <p class="quote">${quoteOnPage.quote}</p>
+    <p class="source">${quoteOnPage.source}
+    `
+  
+}
+console.log(htmlString);
 
 
 /***
