@@ -12,31 +12,40 @@ project 1 - A Random Quote Generator
 ***/
 
 const quotes = [
-  { quote: 'First quote',
-    source: 'First source',
-    citation: 'First citation',
-    year: 'First year'
+  { quote: '...',
+    source: 'Trainer Red',
+    citation: 'Pokemon Gold and Silver',
+    year: '2000',
+    tags: '#pokemon #nintendo #videogames'
   },
-  { quote: 'Second quote',
-    source: 'Second source',
-    citation: 'Second citation',
-    year: 'Second year'
+  { quote: 'When I swim in the sea and get wet... the ocean gets a little bit dryer.  Do I, like, owe the ocean an apology?',
+    source: 'Pascal',
+    citation: 'Animal Crossing: New Horizons',
+    year: '2020',
+    tags: '#animalcrossing #nintendo #videogames'
   },
-  { quote: 'Third quote',
-    source: 'Third source',
-    citation: 'Third citation',
-    year: 'Third year'
+  { quote: 'A girl knows her limits, but a wise girl knows she has none.',
+    source: 'Norma Jeane Mortenson',
+    citation: '',
+    year: '1926-1962'
   },
-  { quote: 'Fourth quote',
-    source: 'Fourth source',
-    citation: 'Fourth citation',
-    year: 'Fourth year'
-
+  { quote: "I see now that the circumstances of one's birth are irrelevant.  It is what you do with the gift of life that determines who you are.",
+    source: 'Mewtwo',
+    citation: 'Pokemon: The First Movie',
+    year: '1999',
+    tags: '#pokemon #mewtwo #nintendo #wordstoliveby'
   },
-  { quote: 'Fifth quote',
-    source: 'Fifth source',
-    citation: 'Fifth citation',
-    year: 'Fifth year'
+  { quote: "If you want to live a life you've never lived, you have to do things you've never done.",
+    source: 'Jen Sincero',
+    citation: 'You Are A Badass',
+    year: '2013',
+    tags: '#selfdevelopment'
+  },
+  { quote: "Trust me.",
+    source: 'BT-7274',
+    citation: 'Titanfall 2',
+    year: '2016',
+    tags: '#protocol3 #whereistitanfall3 #BTcomeback'
   }
 ];
 
