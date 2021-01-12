@@ -72,19 +72,20 @@ function printQuote() {
   if (`${quoteOnPage.citation}` !== '') {
     htmlString += 
     `<span class="citation"> ${quoteOnPage.citation} </span>`
-  }
+    };
 
   //Check if year is blank - if not, populate in htmlString
   if (`${quoteOnPage.year}` !== '') {
     htmlString +=
     `<span class="year"> ${quoteOnPage.year} </span>`
-  }
+    };
+  
   htmlString += `</p>`
   return htmlString;
 }
 
 //Push quote to page:
-document.getElementById('quote-box').innerHTML = htmlString; 
+document.getElementById('quote-box').innerHTML === htmlString; 
 
 
 /***
