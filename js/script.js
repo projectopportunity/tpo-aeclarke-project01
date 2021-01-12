@@ -74,7 +74,7 @@ function printQuote() {
   if (`${quoteOnPage.citation}` !== '') {
     htmlString += 
       `
-      <span class="citation"> ${quoteOnPage.citation} </span>
+      <span class="citation">${quoteOnPage.citation}</span>
       `
     };
 
@@ -82,7 +82,7 @@ function printQuote() {
   if (`${quoteOnPage.year}` !== '') {
     htmlString +=
       `
-      <span class="year"> ${quoteOnPage.year} </span>
+      <span class="year">${quoteOnPage.year}</span>
       `
     };
   
