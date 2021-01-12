@@ -83,6 +83,9 @@ function printQuote() {
   return htmlString;
 }
 
+//Push quote to page:
+document.getElementById('quote-box').innerHTML = htmlString; 
+
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
