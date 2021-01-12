@@ -66,7 +66,7 @@ function printQuote() {
 
   let htmlString =
   `<p class="quote">${quoteOnPage.quote}</p>
-  <p class="source">${quoteOnPage.source}`
+   <p class="source">${quoteOnPage.source}`
 
   //Check if citation is blank - if not, populate in htmlString
   if (`${quoteOnPage.citation}` !== '') {
