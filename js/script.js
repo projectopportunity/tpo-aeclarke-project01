@@ -83,8 +83,7 @@ function printQuote() {
   return htmlString;
 }
 
-//Push quote to page:
-document.getElementById('quote-box').innerHTML = htmlString; 
+
 
 /***
  * click event listener for the print quote button
@@ -92,3 +91,6 @@ document.getElementById('quote-box').innerHTML = htmlString;
 ***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
+
+//Push quote to page:
+document.getElementById('quote-box').innerHTML = htmlString; 
