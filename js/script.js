@@ -10,7 +10,34 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
+const quotes = [
+  { quote: 'First quote',
+    source: 'First source',
+    citation: 'First citation',
+    year: 'First year'
+  },
+  { quote: 'Second quote',
+    source: 'Second source',
+    citation: 'Second citation',
+    year: 'Second year'
+  },
+  { quote: 'Third quote',
+    source: 'Third source',
+    citation: 'Third citation',
+    year: 'Third year'
+  },
+  { quote: 'Fourth quote',
+    source: 'Fourth source',
+    citation: 'Fourth citation',
+    year: 'Fourth year'
 
+  },
+  { quote: 'Fifth quote',
+    source: 'Fifth source',
+    citation: 'Fifth citation',
+    year: 'Fifth year'
+  }
+];
 
 
 /***
