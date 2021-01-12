@@ -75,7 +75,7 @@ function printQuote() {
 
   //Check if year is blank - if not, populate in htmlString
   if (`${quoteOnPage.year}` !== '') {
-    htmlString += `<span class="year">${quoteOnPage.year}</span>`
+    htmlString += `<span class="year">${quoteOnPage.year}</span>`
     } else htmlString += ``;
   
   htmlString += `</p>`
