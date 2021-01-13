@@ -109,15 +109,15 @@ function printQuote() {
 }
 
 // Interval Timer - Creation of timer to cycle through quotes:
-intervalTimer = setInterval(printQuote,[6000]);
+let intervalTimer = setInterval(printQuote,6000);
 
 // Function to reset interval on click:
 function resetIntervalTimer () {
   clearInterval(intervalTimer);
-  intervalTimer = setInterval(printQuote,[6000])
+  intervalTimer = setInterval(printQuote,6000)
 }
 
-document.getElementById('load-quote').addEventListener("click", resetIntervalTimer, false)
+document.getElementById('load-quote').addEventListener("click", resetIntervalTimer, false);
        
  /***
  * click event listener for the print quote button
