@@ -96,7 +96,7 @@ function printQuote() {
   let randomColorArray = [];
 
   for (let i = 1; i <4; i++) {
-    randomColorArray.push(Math.floor((Math.random()) * 255) +1);
+    randomColorArray.push(Math.floor((Math.random()) * 255));
   } 
 
   let randomColor;
