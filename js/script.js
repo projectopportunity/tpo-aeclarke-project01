@@ -67,7 +67,8 @@ function getRandomQuote(array) {
  * `printQuote` function:
  *1. Calls the getRandomQuote function to generate a quote to show on the page
  *2. Creates the HTML string, using the properties from the quote
- *3. Displays quote on the browser page
+ *3. Creates a random RGB value to display for background of page
+ *4. Displays quote on the browser page
 ***/
 
 
@@ -91,7 +92,7 @@ function printQuote() {
   
   htmlString += `<p class="tags">${quoteOnPage.tags}</p></p>`
   
-  // Random Background Color Generator:
+  // Random Background Color Generator - creates a random RGB value and assigns it to the background:
   let randomColorArray = [];
 
   for (let i = 1; i <4; i++) {
@@ -106,10 +107,14 @@ function printQuote() {
   // Push quote to page:
   return document.getElementById('quote-box').innerHTML = `${htmlString}`
 }
-   
+
+  // Interval Timer:
+  intervalTimer = setInterval(printQuote,[6000]);
+     
  /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
+clearInterval(setInterval)
