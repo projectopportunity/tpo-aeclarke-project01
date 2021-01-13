@@ -91,16 +91,21 @@ function printQuote() {
   
   htmlString += `<p class="tags">${quoteOnPage.tags}</p></p>`
   
+  // Random Background Color Generator:
+  let randomColorArray = [];
+
+  for (let i = 1; i <4; i++) {
+    randomColorArray.push(Math.floor((Math.random()) * 255) +1);
+  } 
+
+  let randomColor;
+  randomColor = randomColorArray.join(', ')
+
+  document.body.style.backgroundColor = `rgb(${randomColor})`;
+
   // Push quote to page:
   return document.getElementById('quote-box').innerHTML = `${htmlString}`
 }
-
-// Random Background Color Generator:
-  let randomColorArray = [];
-
-  for (let i = 0; i <3; i++) {
-    randomColorArray.push(Math.floor(Math.random()) * 255)
-  } 
    
  /***
  * click event listener for the print quote button
