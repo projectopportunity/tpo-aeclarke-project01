@@ -105,7 +105,7 @@ function printQuote() {
   document.body.style.backgroundColor = `rgb(${randomColor})`;
 
   // Push quote to page:
-  return document.getElementById('quote-box').innerHTML = `${htmlString}`
+  return document.getElementById('quote-box').innerHTML = htmlString
 }
 
 // Interval Timer - Creation of timer to cycle through quotes:
